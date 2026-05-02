@@ -268,3 +268,54 @@ Contributions are welcome! Some areas that would benefit from improvement:
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+## Expected output
+
+```
+========================================================
+  UEFI Bare-Metal Network Stack v1.0
+  IA made but it works i think...
+========================================================
+
+[*] Initializing network (DHCP)...
+[+] Network initialized successfully!
+
+--- Network Configuration ---
+  MAC Address : 00:0C:29:E2:DC:4A
+  IP Address  : 192.168.161.128
+  Subnet Mask : 255.255.255.0
+  Gateway     : 192.168.161.2
+  DNS Server  : 192.168.161.2
+  Lease Time  : 1800 seconds
+-----------------------------
+
+[*] Pinging gateway (192.168.161.2)...
+[+] Ping reply received!
+
+[*] Resolving example.com...
+[+] example.com -> 104.20.23.154
+
+[*] Fetching http://example.com/ ...
+
+--- HTTP Response (832 bytes) ---
+HTTP/1.1 200 OK
+Date: Sat, 02 May 2026 02:06:09 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: close
+Server: cloudflare
+Last-Modified: Fri, 01 May 2026 01:24:29 GMT
+Allow: GET, HEAD
+Accept-Ranges: bytes
+Age: 3192
+cf-cache-status: HIT
+CF-RAY: 9f537710597ef8f1-NVT
+
+210
+<!doctype html><html lang="en"><head><title>Example Domain</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>body{background:#eee;width:60vw;margin:15vh auto;font-family:system-ui,sans-serif}h1{font-size:1.5em}div{opacity:0.8}a:link,a:visited{color:#348}</style></head><body><div><h1>Example Domain</h1><p>This domain is for use in documentation examples without needing permission. Avoid use in operations.</p><p><a href="https://iana.org/domains/example">Learn more</a></p></div></body></html>
+
+
+--- End of Response ---
+
+[*] Demo complete. Press reset to reboot.
+```
