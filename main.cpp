@@ -50,7 +50,7 @@ extern "C" EFI_STATUS EFIAPI EfiMain(IN EFI_HANDLE image_handle, IN EFI_SYSTEM_T
     io::print_str(L"\r\n");
     io::print_str(L"========================================================\r\n");
     io::print_str(L"  UEFI Bare-Metal Network Stack v1.0\r\n");
-    io::print_str(L"  github.com/youruser/uefi-netstack\r\n");
+    io::print_str(L"  IA made but it works i think...\r\n");
     io::print_str(L"========================================================\r\n\r\n");
 
     // ================================================================
