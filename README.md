@@ -1,5 +1,7 @@
 # uefi-netstack
 
+# IT SUPPORTS ONLY ETHERNET AND YOU NEED EDK2 TO COMPILE IT
+
 **A complete bare-metal IPv4 network stack for UEFI applications.**
 
 Built entirely from scratch using only the `EFI_SIMPLE_NETWORK_PROTOCOL` — no OS, no runtime, no external libraries. Just raw Ethernet frames and hand-crafted protocol implementations.
